@@ -11,7 +11,7 @@ class UserRepository:
         :param user:
         :return:
         """
-        if user.is_authenticate and not(self.find_by_name(user.name)):
+        if user.is_authenticate and not (self.find_by_name(user.name)):
             self.data.append(user)
 
     def find_by_name(self, user_name: str) -> bool:
@@ -24,3 +24,12 @@ class UserRepository:
             if user.name == user_name:
                 return True
         return False
+
+    def log_out(self):
+        """
+        Разлогинивает всех, кроме admin
+        :return:
+        """
+        for user in self.data:
+            if not user.is_admin:
+                self.data.remove(user)
