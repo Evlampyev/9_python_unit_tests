@@ -4,28 +4,22 @@ class Book:
         self.title = title
         self.author = author
 
-    @property
-    def id(self) -> int:
+    def get_id(self) -> int:
         """getter method"""
         return self.id
 
-    @id.setter
-    def id(self, value: int) -> None:
+    def set_id(self, value: int) -> None:
         """setter method"""
-        self._id = value
+        self.id = value
 
-    @property
-    def title(self):
+    def get_title(self):
         return self.title
 
-    @title.setter
-    def title(self, value):
-        self._title = value
+    def set_title(self, value):
+        self.title = value
 
-    @property
-    def author(self):
+    def egt_author(self):
         return self.author
 
-    @author.setter
-    def author(self, value):
+    def set_author(self, value):
         self.author = value
