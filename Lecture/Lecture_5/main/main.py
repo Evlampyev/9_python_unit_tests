@@ -1,11 +1,10 @@
-from calculate import Calculate
 from controller import Controller
 from interface import Interface
 
 
 def main():
     interface = Interface()
-    while (task := interface.greeting()) != 0:
+    while (task := interface.greeting()) != '0':
         control = Controller(task)
         interface.answer(task, control.answer[0])
 

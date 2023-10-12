@@ -1,4 +1,4 @@
-from calculate import Calculate
+from Lecture.Lecture_5.main.calculate import Calculate
 
 
 class Controller:
@@ -12,6 +12,7 @@ class Controller:
         operators = ('*', '/', '+', '-')
         task_list = []
         i = 0
+        error = None
         while len(self.task) > 0 and i < len(self.task):
             if self.task[i] in operators:
                 task_list.append(int(self.task[:i]))
@@ -19,11 +20,15 @@ class Controller:
                 self.task = self.task[i + 1:]
                 i = 0
             elif not self.task[i].isdigit():
-                raise IOError("Неверный ввод")
+                error = "Неверный ввод"
+                i += 1
             else:
                 i += 1
-        task_list.append(int(self.task))
-        self.answer = task_list
+        if error is None:
+            task_list.append(int(self.task))
+            self.answer = task_list
+        else:
+            self.answer = error
 
     def calculating(self):
         operators = ['*', '/', '+', '-']

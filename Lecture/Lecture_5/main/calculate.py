@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class Calculate:
 
     def __init__(self, a, b, operator: str):
@@ -18,7 +21,7 @@ class Calculate:
             case '/':
                 self.answer = self.div()
             case _:
-                assert IOError, 'Не известная операция'
+                self.answer = 'Не известная операция'
 
     def add(self) -> float:
         return self.a + self.b
@@ -29,6 +32,8 @@ class Calculate:
     def mul(self) -> float:
         return self.a * self.b
 
-    def div(self) -> float:
-        assert self.b != 0, 'На ноль делить нельзя'
-        return self.a / self.b
+    def div(self) -> str | Any:
+        try:
+            return self.a / self.b
+        except ZeroDivisionError as er:
+            return f'На ноль делить нельзя'
