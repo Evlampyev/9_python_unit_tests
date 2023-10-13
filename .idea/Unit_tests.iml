@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Lecture/Lecture_5/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lecture/Lecture_5/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWorks/home_5/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HomeWorks/home_5/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWorks/home_5/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/HomeWorks/home_1/python/calculate/.pytest_cache/v" />
       <excludeFolder url="file://$MODULE_DIR$/HomeWorks/home_1/python/shop/.pytest_cache/v" />
       <excludeFolder url="file://$MODULE_DIR$/HomeWorks/home_2/python/.pytest_cache/v" />
