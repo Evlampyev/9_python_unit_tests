@@ -13,7 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Seminars/Seminar_1/tests/.pytest_cache/v" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (9_python_unit_tests)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
