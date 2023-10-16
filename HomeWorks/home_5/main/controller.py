@@ -8,6 +8,9 @@ from teminal_interface import TerminalInterface as MyInterface
 # file_interface - в файл log_file
 
 class Controller:
+    """
+    Организация работы приложения
+    """
     def __init__(self, size):
         self.lists = []
         self.averages = []
